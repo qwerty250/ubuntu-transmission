@@ -1,4 +1,5 @@
 # ubuntu-xfce-vnc-desktop-chrome
 
-testing
-
+Testing.
+Use it at your own risk.
+qwerty250 Modified: add transmission
