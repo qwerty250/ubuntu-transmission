@@ -31,9 +31,9 @@ ADD kcoilljlnfjahoofolooodhmgojcfnpo.json /opt/google/chrome/extensions/
 COPY xfce4 ./.config/xfce4
 
 # install transmision
-RUN apt-get update
-RUN apt-get install transmission-gtk
-RUN apt-get install transmission-daemon
+RUN apt-get update -y
+RUN apt-get install transmission-gtk -y
+RUN apt-get install transmission-daemon -y
 
 EXPOSE 5900
 EXPOSE 51413
