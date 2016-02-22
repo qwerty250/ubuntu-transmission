@@ -1,6 +1,8 @@
-# ubuntu-xfce-vnc-desktop-chrome
+# ubuntu-transmission
 
 Testing.
+
+Ubuntu + Xfce + VNC + Chrome + Transmission.
 
 Use it at your own risk.
 
