@@ -30,6 +30,13 @@ ADD kcoilljlnfjahoofolooodhmgojcfnpo.json /opt/google/chrome/extensions/
 
 COPY xfce4 ./.config/xfce4
 
+# install transmision
+RUN apt-get update
+RUN apt-get install transmission-gtk
+RUN apt-get install transmission-daemon
+
 EXPOSE 5900
+EXPOSE 51413
+EXPOSE 9091
 
 ENTRYPOINT ["./startup.sh"]
