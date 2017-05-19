@@ -32,10 +32,8 @@ COPY xfce4 ./.config/xfce4
 
 # install transmision
 RUN apt-get update -y
-RUN apt-get install transmission-gtk -y
+RUN apt-get install transmission -y
 RUN apt-get install transmission-daemon -y
-# config webui
-COPY settings.json /root/.config/transmission
 
 # install ssh server
 RUN apt-get install -y openssh-server
