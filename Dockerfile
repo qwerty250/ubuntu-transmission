@@ -34,6 +34,11 @@ COPY xfce4 ./.config/xfce4
 RUN apt-get update -y
 RUN apt-get install transmission -y
 RUN apt-get install transmission-daemon -y
+RUN killall transmission-daemon
+
+# config webui
+COPY settings.json /root/.config/transmission-daemon
+RUN transmission-daemon
 
 # install ssh server
 RUN apt-get install -y openssh-server
