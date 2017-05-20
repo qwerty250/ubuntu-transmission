@@ -34,7 +34,7 @@ COPY xfce4 ./.config/xfce4
 RUN apt-get update -y
 RUN apt-get install transmission -y
 RUN apt-get install transmission-daemon -y
-RUN killall transmission-daemon
+#RUN killall transmission-daemon
 
 # config webui
 COPY settings.json /root/.config/transmission-daemon
