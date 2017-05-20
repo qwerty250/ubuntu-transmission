@@ -7,7 +7,7 @@ RUN apt-get update -y
 RUN apt-get install -y supervisor wget \
 		xfce4 xfce4-goodies x11vnc xvfb \
 		gconf-service libnspr4 libnss3 fonts-liberation \
-		libappindicator1 libcurl3 fonts-wqy-microhei
+		libappindicator1 libcurl3 fonts-wqy-microhei psmisc
 
 # download google chrome and install -unneeded
 #RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
